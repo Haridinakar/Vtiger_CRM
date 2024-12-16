@@ -62,7 +62,7 @@ public class BaseClass {
 	public void login() throws IOException {
 		lp = new LoginPage(driver);
 		lp.getUsernameTextField().sendKeys(fUtil.getDataFromProperty("username"));
-		lp.getUsernameTextField().sendKeys(fUtil.getDataFromProperty("password"));
+		lp.getPasswordTextField().sendKeys(fUtil.getDataFromProperty("password"));
 		lp.getLoginButton().click();
 	}
 
